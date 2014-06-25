@@ -1,7 +1,0 @@
-FROM codenvy/jruby
-ADD $app$ /home/user/app.zip
-RUN unzip -q /home/user/app.zip -d /home/user/app && rm -rf /home/user/app.zip
-WORKDIR /home/user/app
-RUN jrubyc --java my_runnable.rb
-RUN javac -cp $JRUBY_HOME/lib/jruby.jar MyRunnable.java
-CMD java -cp $JRUBY_HOME/lib/jruby.jar:. MyRunnable
