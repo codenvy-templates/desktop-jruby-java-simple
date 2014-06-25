@@ -1,1 +1,1 @@
-{"type":"maven","properties":[{"name":"runner.name","value":["JRuby"]}]}
+{"type":"maven","properties":[{"name":"builder.name","value":["maven"]}, {"name":"runner.name","value":["JavaStandalone"]}]}
