@@ -5,7 +5,7 @@ class MyRunnable
 
   java_signature "void run()"
   def run
-    puts 'here'
+    puts 'Hello World!'
   end
 
   java_signature "void main(String[])"
